@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import axios from "axios";
 import Weather from "./Weather";
+import WeatherIcon from "./WeatherIcon";
 
-function App() {
+function App(props) {
   const apiKey = "c11eb907238f0b8255b8ad494906f796";
   const [city, setCity] = useState("");
   const [data, setData] = useState({});
@@ -54,29 +55,20 @@ function App() {
       </div>
       <div className="col md-12" text center mt-5>
         <div className="shadow rounded weatherBox">
-          <div className="container">
-            <Weather defautCity="Cape Town" />
-          </div>
           <h5 className="weatherCity">{data?.name}</h5>
           <h6 className="weatherTemp">{Math.round(data?.main?.temp)}°C</h6>
+
           <Weather />
         </div>
       </div>
       <footer>
-        This project was coded by{" "}
-        <a href="https://www.delac.io/" target="_blank">
-          Matt Delac
-        </a>{" "}
-        and is{" "}
+        This project was coded by {""}
         <a
-          href="https://github.com/wecodeschool/react-weather-app"
+          href="https://github.com/MonMihle/react-final-project"
           target="_blank"
+          rel="noopener"
         >
-          open-sourced on GitHub
-        </a>{" "}
-        and{" "}
-        <a href="https://suspicious-beaver-111c4d.netlify.com/" target="_blank">
-          hosted on Netlify
+          Monica Mntanywa
         </a>
       </footer>
     </div>
