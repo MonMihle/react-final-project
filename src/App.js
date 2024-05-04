@@ -2,8 +2,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import axios from "axios";
+//import WeatherIcons from "./WeatherIcons";
 
-function App(props) {
+function App() {
   const apiKey = "c11eb907238f0b8255b8ad494906f796";
   const [city, setCity] = useState("");
   const [data, setData] = useState({});
@@ -58,13 +59,21 @@ function App(props) {
         </div>
       </div>
       <footer>
-        This project was coded by {""}
+        This project was coded by Monica Mntanywa and is{" "}
         <a
           href="https://github.com/MonMihle/react-final-project"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
-          Monica Mntanywa
+          open-sourced on GitHub
+        </a>{" "}
+        and is{" "}
+        <a
+          href="https://cerulean-gumdrop-320cc7.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          hosted on Netlify
         </a>
       </footer>
     </div>
