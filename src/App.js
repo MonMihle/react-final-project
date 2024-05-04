@@ -2,8 +2,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import axios from "axios";
-import Weather from "./Weather";
-import WeatherIcon from "./WeatherIcon";
 
 function App(props) {
   const apiKey = "c11eb907238f0b8255b8ad494906f796";
@@ -57,8 +55,6 @@ function App(props) {
         <div className="shadow rounded weatherBox">
           <h5 className="weatherCity">{data?.name}</h5>
           <h6 className="weatherTemp">{Math.round(data?.main?.temp)}°C</h6>
-
-          <Weather />
         </div>
       </div>
       <footer>
