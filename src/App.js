@@ -62,7 +62,7 @@ function App(props) {
         <a
           href="https://github.com/MonMihle/react-final-project"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           Monica Mntanywa
         </a>
